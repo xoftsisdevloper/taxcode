@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>TaxCode - Professional Tax & Business Services</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="Premium GST, Income Tax, Startup Registration, Book Keeping, Notice Advisory & License Certification Services">
+    <meta name="keywords" content="GST registration, income tax filing, startup registration, bookkeeping, notice advisory">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* Professional UI Enhancements */
+        :root {
+            --primary: #015FC9;
+            --primary-dark: #004eaa;
+            --primary-light: #e8f1fe;
+            --secondary: #0DD3F1;
+            --accent: #ff6b35;
+            --dark: #0a1a3a;
+            --gray: #6c7a91;
+            --light-bg: #f8faff;
+            --border-light: #eef2f6;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1a2a4f;
+            background: #ffffff;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 700;
+        }
+
+        /* Hero Section */
+        .services-hero {
+            background: linear-gradient(135deg, #0a1a3a 0%, #0d2b5e 50%, #015FC9 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .services-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000"><path fill="rgba(255,255,255,0.03)" d="M0,0 L2000,0 L2000,2000 L0,2000 Z M500,500 L1500,500 L1500,1500 L500,1500 Z"/></svg>');
+            background-size: 50px 50px;
+        }
+
+        /* Service Category Cards - Premium Design */
+        .premium-card {
+            background: #ffffff;
+            border-radius: 28px;
+            transition: all 0.4s cubic-bezier(0.2, 0, 0, 1);
+            border: 1px solid var(--border-light);
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.02);
+        }
+
+        .premium-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 45px -12px rgba(0,95,201,0.25);
+            border-color: transparent;
+        }
+
+        .card-header-premium {
+            padding: 1.5rem 2rem;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            position: relative;
+        }
+
+        .card-header-premium h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: -0.3px;
+        }
+
+        .card-badge {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(4px);
+            padding: 5px 14px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        /* Service Grid Items */
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 0.75rem;
+            padding: 1.5rem 2rem;
+        }
+
+        .service-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 12px;
+            background: var(--light-bg);
+            border-radius: 14px;
+            transition: all 0.25s ease;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #2d3a5e;
+        }
+
+        .service-item:hover {
+            background: var(--primary-light);
+            transform: translateX(5px);
+        }
+
+        .service-item i {
+            width: 22px;
+            color: var(--primary);
+            font-size: 0.9rem;
+        }
+
+        /* CTA Button on Card */
+        .card-footer-action {
+            padding: 1rem 2rem 1.8rem;
+            border-top: 1px solid var(--border-light);
+            background: #ffffff;
+        }
+
+        /* Stats Section */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+
+        .stat-card {
+            background: white;
+            border-radius: 24px;
+            padding: 1.8rem;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-light);
+            transition: all 0.3s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 35px rgba(0,95,201,0.1);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        /* Pricing Cards Premium */
+        .pricing-premium {
+            background: white;
+            border-radius: 32px;
+            padding: 2rem;
+            transition: all 0.4s;
+            border: 1px solid var(--border-light);
+            height: 100%;
+        }
+
+        .pricing-premium.featured {
+            background: linear-gradient(145deg, #0a1a3a 0%, #0d2b5e 100%);
+            color: white;
+            transform: scale(1.02);
+            border: none;
+        }
+
+        .pricing-premium.featured .price {
+            color: #ffc107;
+        }
+
+        .pricing-premium.featured .feature-list li i {
+            color: #ffc107;
+        }
+
+        .price {
+            font-size: 3rem;
+            font-weight: 800;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+
+        .feature-list li {
+            padding: 0.6rem 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.9rem;
+        }
+
+        .feature-list li i {
+            color: var(--primary);
+            font-size: 1rem;
+        }
+
+        /* Floating Buttons */
+        .float-wa, .float-call {
+            position: fixed;
+            left: 25px;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            transition: all 0.3s;
+        }
+
+        .float-wa { bottom: 95px; background: #25D366; }
+        .float-call { bottom: 25px; background: var(--primary); }
+
+        .float-wa:hover, .float-call:hover { transform: scale(1.1); width: 60px; height: 60px; }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .service-grid { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 768px) {
+            .card-header-premium h3 { font-size: 1.2rem; }
+            .service-grid { padding: 1.2rem; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Spinner -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark text-white-50 py-2 px-0 d-none d-lg-block">
+        <div class="row gx-0 align-items-center">
+            <div class="col-lg-12 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="fa fa-phone-alt me-2"></small>
+                    <small><a href="tel:+919626485868" class="text-white">+91 96264 85868</a></small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="far fa-envelope-open me-2"></small>
+                    <small><a href="mailto:tameenansaris@gmail.com" class="text-white">tameenansaris@gmail.com</a></small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="far fa-clock me-2"></small>
+                    <small>Mon - Fri : 09 AM - 09 PM</small>
+                </div>
+            </div>
+            <!-- <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="text-white-50 ms-4" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="text-white-50 ms-4" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="text-white-50 ms-4" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="text-white-50 ms-4" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top shadow px-4 px-lg-5">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <h1 class="m-0 h2">Tax<span class="text-primary">Code</span></h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto bg-light rounded px-3 py-1">
+                <!-- Startups Dropdown (Updated) -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Startups</a>
+                    <div class="dropdown-menu border-0 shadow rounded-3">
+                        <a href="service.html" class="dropdown-item">Proprietorship</a>
+                        <a href="service.html" class="dropdown-item">Partnership Firm</a>
+                        <a href="service.html" class="dropdown-item">One Person Company (OPC)</a>
+                        <a href="service.html" class="dropdown-item">Limited Liability Partnership (LLP)</a>
+                        <a href="service.html" class="dropdown-item">Private Limited Company</a>
+                    </div>
+                </div>
+
+                <!-- Registrations Dropdown (Updated) -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Registrations</a>
+                    <div class="dropdown-menu border-0 shadow rounded-3 dropdown">
+                        <div class="service-dropdown">
+                            <a href="service.html" class="dropdown-item">GST Registration</a>
+                            <a href="service.html" class="dropdown-item">GST Registration for NRI</a>
+                            <a href="service.html" class="dropdown-item">EPF Registration</a>
+                            <a href="service.html" class="dropdown-item">ESI Registration</a>
+                            <a href="service.html" class="dropdown-item">Udyam Registration (MSME)</a>
+                            <a href="service.html" class="dropdown-item">Import & Export Code (IEC)</a>
+                            <a href="service.html" class="dropdown-item">Professional Tax Registration</a>
+                            <a href="service.html" class="dropdown-item">Digital Signature Certificate (DSC)</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GST Dropdown (Updated) -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">GST</a>
+                    <div class="dropdown-menu border-0 shadow rounded-3 large-dropdown">
+                        <div class="service-dropdown-columns">
+                            <a href="service.html" class="dropdown-item">GST Registration</a>
+                            <a href="service.html" class="dropdown-item">GST Monthly Filings</a>
+                            <a href="service.html" class="dropdown-item">GST Annual Filings (GSTR-9/9C)</a>
+                            <a href="service.html" class="dropdown-item">GST Amendments</a>
+                            <a href="service.html" class="dropdown-item">GST Audits</a>
+                            <a href="service.html" class="dropdown-item">GST Refunds</a>
+                            <a href="service.html" class="dropdown-item">GST Assessment Support</a>
+                            <a href="service.html" class="dropdown-item">LUT Filing</a>
+                            <a href="service.html" class="dropdown-item">GST Cancellation / Surrender</a>
+                            <a href="service.html" class="dropdown-item">GSTR-10 Filing</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Income Tax Dropdown (Updated) -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Income Tax</a>
+                    <div class="dropdown-menu border-0 shadow rounded-3">
+                        <a href="service.html" class="dropdown-item">Salary (ITR-1)</a>
+                        <a href="service.html" class="dropdown-item">House Property</a>
+                        <a href="service.html" class="dropdown-item">Business & Profession (ITR-3/4)</a>
+                        <a href="service.html" class="dropdown-item">Capital Gains</a>
+                        <a href="service.html" class="dropdown-item">Income from Other Sources</a>
+                        <a href="service.html" class="dropdown-item">TDS Return Filing</a>
+                        <a href="service.html" class="dropdown-item">Tax Planning & Advisory</a>
+                    </div>
+                </div>
+
+                <!-- Book Keeping Dropdown (New - from requirements) -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Book Keeping</a>
+                    <div class="dropdown-menu border-0 shadow rounded-3 large-dropdown">
+                        <div class="service-dropdown-columns">
+                            <a href="service.html" class="dropdown-item">GST Monthly Returns</a>
+                            <a href="service.html" class="dropdown-item">GST Input & Output Reconciliation</a>
+                            <a href="service.html" class="dropdown-item">TDS Payments & Returns</a>
+                            <a href="service.html" class="dropdown-item">EPF Monthly Returns</a>
+                            <a href="service.html" class="dropdown-item">ESI Monthly Returns</a>
+                            <a href="service.html" class="dropdown-item">MSME Returns</a>
+                            <a href="service.html" class="dropdown-item">Professional Tax Filings</a>
+                            <a href="service.html" class="dropdown-item">Tally Accounting</a>
+                            <a href="service.html" class="dropdown-item">Bank Statement Reconciliation</a>
+                            <a href="service.html" class="dropdown-item">MIS Reports</a>
+                            <a href="service.html" class="dropdown-item">Virtual Bookkeeping Services</a>
+                            <a href="service.html" class="dropdown-item">Statutory Compliance Reporting</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GST Notice Advisory (Updated from requirements) -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Notice Advisory</a>
+                    <div class="dropdown-menu border-0 shadow rounded-3 large-dropdown">
+                        <div class="service-dropdown-columns">
+                            <a href="service.html" class="dropdown-item">GST Notice Assistance</a>
+                            <a href="service.html" class="dropdown-item">GST Non-Filing Notice Support</a>
+                            <a href="service.html" class="dropdown-item">GST Notice Appeal Filings</a>
+                            <a href="service.html" class="dropdown-item">GST Bank Recovery Notice Support</a>
+                            <a href="service.html" class="dropdown-item">GST Audit Notice Support</a>
+                            <a href="service.html" class="dropdown-item">GST Assessment Notice Support</a>
+                            <a href="service.html" class="dropdown-item">GST Enforcement Notice Support</a>
+                            <a href="service.html" class="dropdown-item">GST Revocation & Surrender Support</a>
+                            <a href="service.html" class="dropdown-item">GST Scrutiny Notice Advisory</a>
+                            <a href="service.html" class="dropdown-item">GST Summons Advisory</a>
+                            <a href="service.html" class="dropdown-item">All Income Tax Notice Support</a>
+                            <a href="service.html" class="dropdown-item">Departmental Representation</a>
+                            <a href="service.html" class="dropdown-item">GST Refund Rejection Support</a>
+                            <a href="service.html" class="dropdown-item">Tax & GST Notice Management</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- License & Certifications (New - from requirements) -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Licenses</a>
+                    <div class="dropdown-menu border-0 shadow rounded-3">
+                        <a href="service.html" class="dropdown-item">Net Worth Certificate Support</a>
+                        <a href="service.html" class="dropdown-item">Turnover Certificate Support</a>
+                        <a href="service.html" class="dropdown-item">Net Working Capital Certificate</a>
+                        <a href="service.html" class="dropdown-item">Net Worth Certificate for Visa</a>
+                        <a href="service.html" class="dropdown-item">Net Worth Certificate for Loan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="tel:+919626485868" class="btn btn-primary px-3 mx-2 rounded-pill d-none d-lg-block btn">Ask Expert</a>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section -->
+    <div class="services-hero py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <div class="mb-3">
+                        <span class="badge bg-white text-primary px-4 py-2 rounded-pill shadow-sm">Premium Services</span>
+                    </div>
+                    <h1 class="display-4 fw-bold text-white mb-4">Professional Tax &<br>Business Solutions</h1>
+                    <p class="text-white-50 fs-5 mb-4 mx-auto" style="max-width: 650px;">Complete GST, Income Tax, Startup Registration, Book Keeping, Notice Advisory & License Certification Services under one roof.</p>
+                    <div class="d-flex gap-3 justify-content-center flex-wrap">
+                        <a href="#services" class="btn btn-light rounded-pill px-5 py-3 fw-semibold">Explore Services <i class="bi bi-arrow-right ms-2"></i></a>
+                        <a href="https://wa.me/919626485868" class="btn btn-outline-light rounded-pill px-5 py-3 fw-semibold"><i class="fab fa-whatsapp me-2"></i>WhatsApp Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services" class="container py-5">
+        <div class="text-center mb-5">
+            <span class="badge bg-primary bg-opacity-10 text-white px-4 py-2 rounded-pill mb-3">What We Offer</span>
+            <h2 class="display-6 fw-bold mb-3">Comprehensive Service Portfolio</h2>
+            <p class="text-muted fs-5 mx-auto" style="max-width: 700px;">End-to-end tax and compliance solutions tailored for startups, enterprises, and individuals</p>
+        </div>
+
+        <!-- Startup Registrations -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="premium-card">
+                    <div class="card-header-premium">
+                        <h3 class="text-white"><i class="bi bi-rocket-takeoff me-2"></i> Startup Registrations</h3>
+                        <span class="card-badge text-white">5-15 Days</span>
+                    </div>
+                    <div class="service-grid">
+                        <div class="service-item"><i class="fas fa-check-circle"></i> Proprietorship</div>
+                        <div class="service-item"><i class="fas fa-check-circle"></i> Partnership Firm</div>
+                        <div class="service-item"><i class="fas fa-check-circle"></i> One Person Company</div>
+                        <div class="service-item"><i class="fas fa-check-circle"></i> LLP Registration</div>
+                        <div class="service-item"><i class="fas fa-check-circle"></i> Private Limited Company</div>
+                        <div class="service-item"><i class="fas fa-check-circle"></i> Section 8 Company (NGO)</div>
+                    </div>
+                    <div class="card-footer-action">
+                        <a href="https://wa.me/919626485868" class="btn btn-primary rounded-pill px-4"><i class="fab fa-whatsapp me-2"></i>Get Quote for Startup</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Registrations & Licenses Row -->
+        <div class="row g-4 mb-5">
+            <div class="col-lg-6">
+                <div class="premium-card h-100">
+                    <div class="card-header-premium" style="background: linear-gradient(135deg, #059669 0%, #047857 100%);">
+                        <h3 class="text-white"><i class="bi bi-file-earmark-check-fill me-2"></i> Business Registrations</h3>
+                        <span class="card-badge text-white">3-10 Days</span>
+                    </div>
+                    <div class="service-grid">
+                        <div class="service-item"><i class="fas fa-check-circle text-success"></i> GST Registration</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-success"></i> NRI GST Registration</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-success"></i> MSME / Udyam</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-success"></i> EPF Registration</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-success"></i> ESI Registration</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-success"></i> Professional Tax</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-success"></i> Import Export Code (IEC)</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-success"></i> Digital Signature (DSC)</div>
+                    </div>
+                    <div class="card-footer-action"><a href="https://wa.me/919626485868" class="btn btn-success rounded-pill px-4"><i class="fab fa-whatsapp me-2"></i>Register Now</a></div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="premium-card h-100">
+                    <div class="card-header-premium" style="background: linear-gradient(135deg, #6c757d 0%, #5a6268 100%);">
+                        <h3 class="text-white"><i class="bi bi-patch-check-fill me-2"></i> Licenses & Certifications</h3>
+                        <span class="card-badge text-white">3-5 Days</span>
+                    </div>
+                    <div class="service-grid">
+                        <div class="service-item"><i class="fas fa-check-circle text-secondary"></i> Net Worth Certificate</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-secondary"></i> Turnover Certificate</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-secondary"></i> Working Capital Certificate</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-secondary"></i> Net Worth for Visa</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-secondary"></i> Net Worth for Loan</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-secondary"></i> Solvency Certificate</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-secondary"></i> Experience Certificate</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-secondary"></i> GST Compliance Certificate</div>
+                    </div>
+                    <div class="card-footer-action"><a href="tel:+919626485868" class="btn btn-secondary rounded-pill px-4"><i class="fas fa-phone-alt me-2"></i>Get Certificate</a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GST & Income Tax Row -->
+        <div class="row g-4 mb-5">
+            <div class="col-lg-6">
+                <div class="premium-card h-100">
+                    <div class="card-header-premium" style="background: linear-gradient(135deg, #dc3545 0%, #b02a37 100%);">
+                        <h3 class="text-white"><i class="bi bi-receipt me-2"></i> GST Services</h3>
+                        <span class="card-badge text-white">Monthly/Annual</span>
+                    </div>
+                    <div class="service-grid">
+                        <div class="service-item"><i class="fas fa-check-circle text-danger"></i> GST Registration</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-danger"></i> Monthly Filings (GSTR-1,3B)</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-danger"></i> Annual Returns (GSTR-9,9C)</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-danger"></i> GST Amendments</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-danger"></i> GST Audits</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-danger"></i> GST Refunds</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-danger"></i> LUT Filing</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-danger"></i> Cancellation/Surrender</div>
+                    </div>
+                    <div class="card-footer-action"><a href="https://wa.me/919626485868" class="btn btn-danger rounded-pill px-4"><i class="fab fa-whatsapp me-2"></i>GST Support</a></div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="premium-card h-100">
+                    <div class="card-header-premium" style="background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);">
+                        <h3 class="text-white"><i class="bi bi-cash-stack me-2"></i> Income Tax</h3>
+                        <span class="card-badge text-white">ITR Filing</span>
+                    </div>
+                    <div class="service-grid">
+                        <div class="service-item"><i class="fas fa-check-circle text-info"></i> Salary (ITR-1)</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-info"></i> House Property</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-info"></i> Business (ITR-3,4)</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-info"></i> Capital Gains</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-info"></i> Other Sources</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-info"></i> TDS Returns</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-info"></i> Tax Planning</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-info"></i> Notice Support</div>
+                    </div>
+                    <div class="card-footer-action"><a href="tel:+919626485868" class="btn btn-info text-white rounded-pill px-4"><i class="fas fa-phone-alt me-2"></i>File ITR Now</a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Book Keeping & Notice Advisory Row -->
+        <div class="row g-4 mb-5">
+            <div class="col-lg-6">
+                <div class="premium-card h-100">
+                    <div class="card-header-premium" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);">
+                        <h3 class="text-dark"><i class="bi bi-journal-bookmark-fill me-2"></i> Book Keeping</h3>
+                        <span class="card-badge bg-dark text-white">Monthly</span>
+                    </div>
+                    <div class="service-grid">
+                        <div class="service-item"><i class="fas fa-check-circle text-warning"></i> Tally Accounting</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-warning"></i> Virtual Bookkeeping</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-warning"></i> Bank Reconciliation</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-warning"></i> MIS Reports</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-warning"></i> Financial Statements</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-warning"></i> GST Reconciliation</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-warning"></i> EPF/ESI Returns</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-warning"></i> Professional Tax</div>
+                    </div>
+                    <div class="card-footer-action"><a href="https://wa.me/919626485868" class="btn btn-warning rounded-pill px-4"><i class="fab fa-whatsapp me-2"></i>Outsource Accounting</a></div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="premium-card h-100">
+                    <div class="card-header-premium" style="background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);">
+                        <h3 class="text-white"><i class="bi bi-shield-check me-2"></i> Notice Advisory</h3>
+                        <span class="card-badge text-white">Emergency</span>
+                    </div>
+                    <div class="service-grid">
+                        <div class="service-item"><i class="fas fa-check-circle text-white-50"></i> GST Notice Reply</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-white-50"></i> Show Cause Notice</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-white-50"></i> Scrutiny Assessment</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-white-50"></i> Appeal Filings</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-white-50"></i> Bank Recovery Support</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-white-50"></i> Revocation Services</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-white-50"></i> Department Representation</div>
+                        <div class="service-item"><i class="fas fa-check-circle text-white-50"></i> Income Tax Notice</div>
+                    </div>
+                    <div class="card-footer-action"><a href="tel:+919626485868" class="btn btn-primary rounded-pill px-4"><i class="fas fa-shield-alt me-2"></i>Get Urgent Support</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="container py-4 mb-4">
+        <div class="stats-grid">
+            <div class="stat-card"><div class="stat-number">10,000+</div><p class="mb-0 text-muted">Clients Served</p></div>
+            <div class="stat-card"><div class="stat-number">10+</div><p class="mb-0 text-muted">Years Experience</p></div>
+            <div class="stat-card"><div class="stat-number">500+</div><p class="mb-0 text-muted">GST Registrations</p></div>
+            <div class="stat-card"><div class="stat-number">100%</div><p class="mb-0 text-muted">Client Satisfaction</p></div>
+        </div>
+    </div>
+
+    <!-- CTA Banner -->
+    <div class="container my-5">
+        <div class="bg-primary rounded-4 p-5 text-center" style="background: linear-gradient(135deg, #015FC9 0%, #0a4a8a 100%);">
+            <h2 class="text-white fw-bold mb-3">Ready to Simplify Your Compliance?</h2>
+            <p class="text-white-50 mb-4 fs-5">Get expert assistance for all your tax and business registration needs</p>
+            <a href="tel:+919626485868" class="btn btn-light rounded-pill px-5 py-3 fw-bold me-3"><i class="fas fa-phone-alt me-2"></i>Call Now</a>
+            <a href="https://wa.me/919626485868" class="btn btn-success rounded-pill px-5 py-3 fw-bold"><i class="fab fa-whatsapp me-2"></i>WhatsApp</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6"><h1 class="text-white mb-4">TaxCode</h1><p>Expert tax consulting, business registration, and compliance services trusted by individuals and businesses.</p></div>
+                <div class="col-lg-3 col-md-6"><h5 class="text-light mb-4">Address</h5><p><i class="fa fa-map-marker-alt me-3"></i>4, Karpaga Vinayagar St, Kandhanchavadi, Perungudi, Chennai - 600096</p><p><i class="fa fa-phone-alt me-3"></i>+91 96264 85868</p><p><i class="fa fa-envelope me-3"></i>starfilings@gmail.com</p></div>
+                <div class="col-lg-3 col-md-6"><h5 class="text-light mb-4">Quick Links</h5><a class="btn btn-link" href="#">Startup Registration</a><a class="btn btn-link" href="#">GST Services</a><a class="btn btn-link" href="#">Income Tax</a><a class="btn btn-link" href="#">Book Keeping</a><a class="btn btn-link" href="#">Notice Advisory</a></div>
+                <div class="col-lg-3 col-md-6"><h5 class="text-light mb-4">Chat With Us</h5><p>Have questions? Chat with our experts instantly on WhatsApp.</p><a href="https://wa.me/919626485868" class="btn btn-success w-100 py-3"><i class="fab fa-whatsapp me-2"></i>Chat Now</a></div>
+            </div>
+        </div>
+        <div class="container-fluid copyright"><div class="container"><div class="row"><div class="col-md-12 text-center">&copy; 2026 TaxCode. All Rights Reserved.</div></div></div></div>
+    </div>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- Floating Buttons -->
+    <a href="https://wa.me/919626485868" target="_blank" class="float-wa"><i class="fab fa-whatsapp fa-2x text-white"></i></a>
+    <a href="tel:+919626485868" class="float-call"><i class="fa fa-phone-alt fa-2x text-white"></i></a>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('spinner')?.classList.remove('show');
+        new WOW().init();
+    </script>
+</body>
+
+</html>

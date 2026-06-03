@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>TaxCode - Trusted Tax Advisors | GST, Income Tax, Registrations & Compliance</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta name="description" content="Expert tax consulting, GST filing, income tax, registrations, bookkeeping, and notice advisory services for startups and businesses in India.">
+        <meta name="keywords" content="GST registration, income tax filing, bookkeeping, startup registration, LLP, OPC, notice support, TDS, EPF, ESI">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600;700&display=swap"
+            rel="stylesheet">
+
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <div class="container-fluid bg-dark text-white-50 py-2 px-0 d-none d-lg-block">
+            <div class="row gx-0 align-items-center">
+                <div class="col-lg-12 px-5 text-end">
+                    <div class="h-100 d-inline-flex align-items-center me-4">
+                        <small class="fa fa-phone-alt me-2"></small>
+                        <small><a href="tel:+919626485868" class="text-white">+91 96264 85868</a></small>
+                    </div>
+                    <div class="h-100 d-inline-flex align-items-center me-4">
+                        <small class="far fa-envelope-open me-2"></small>
+                        <small><a href="mailto:tameenansaris@gmail.com" class="text-white">tameenansaris@gmail.com</a></small>
+                    </div>
+                    <div class="h-100 d-inline-flex align-items-center me-4">
+                        <small class="far fa-clock me-2"></small>
+                        <small>Mon - Fri : 09 AM - 09 PM</small>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-5 px-5 text-end">
+                    <div class="h-100 d-inline-flex align-items-center">
+                        <a class="text-white-50 ms-4" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="text-white-50 ms-4" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="text-white-50 ms-4" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="text-white-50 ms-4" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top shadow px-4 px-lg-5">
+            <a href="index.html" class="navbar-brand d-flex align-items-center">
+                <h1 class="m-0 h2">Tax<span class="text-primary">Code</span></h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto bg-light rounded px-3 py-1">
+                    <!-- Startups Dropdown (Updated) -->
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Startups</a>
+                        <div class="dropdown-menu border-0 shadow rounded-3">
+                            <a href="service.html" class="dropdown-item">Proprietorship</a>
+                            <a href="service.html" class="dropdown-item">Partnership Firm</a>
+                            <a href="service.html" class="dropdown-item">One Person Company (OPC)</a>
+                            <a href="service.html" class="dropdown-item">Limited Liability Partnership (LLP)</a>
+                            <a href="service.html" class="dropdown-item">Private Limited Company</a>
+                        </div>
+                    </div>
+
+                    <!-- Registrations Dropdown (Updated) -->
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Registrations</a>
+                        <div class="dropdown-menu border-0 shadow rounded-3 dropdown">
+                            <div class="service-dropdown">
+                                <a href="service.html" class="dropdown-item">GST Registration</a>
+                                <a href="service.html" class="dropdown-item">GST Registration for NRI</a>
+                                <a href="service.html" class="dropdown-item">EPF Registration</a>
+                                <a href="service.html" class="dropdown-item">ESI Registration</a>
+                                <a href="service.html" class="dropdown-item">Udyam Registration (MSME)</a>
+                                <a href="service.html" class="dropdown-item">Import & Export Code (IEC)</a>
+                                <a href="service.html" class="dropdown-item">Professional Tax Registration</a>
+                                <a href="service.html" class="dropdown-item">Digital Signature Certificate (DSC)</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- GST Dropdown (Updated) -->
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">GST</a>
+                        <div class="dropdown-menu border-0 shadow rounded-3 large-dropdown">
+                            <div class="service-dropdown-columns">
+                                <a href="service.html" class="dropdown-item">GST Registration</a>
+                                <a href="service.html" class="dropdown-item">GST Monthly Filings</a>
+                                <a href="service.html" class="dropdown-item">GST Annual Filings (GSTR-9/9C)</a>
+                                <a href="service.html" class="dropdown-item">GST Amendments</a>
+                                <a href="service.html" class="dropdown-item">GST Audits</a>
+                                <a href="service.html" class="dropdown-item">GST Refunds</a>
+                                <a href="service.html" class="dropdown-item">GST Assessment Support</a>
+                                <a href="service.html" class="dropdown-item">LUT Filing</a>
+                                <a href="service.html" class="dropdown-item">GST Cancellation / Surrender</a>
+                                <a href="service.html" class="dropdown-item">GSTR-10 Filing</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Income Tax Dropdown (Updated) -->
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Income Tax</a>
+                        <div class="dropdown-menu border-0 shadow rounded-3">
+                            <a href="service.html" class="dropdown-item">Salary (ITR-1)</a>
+                            <a href="service.html" class="dropdown-item">House Property</a>
+                            <a href="service.html" class="dropdown-item">Business & Profession (ITR-3/4)</a>
+                            <a href="service.html" class="dropdown-item">Capital Gains</a>
+                            <a href="service.html" class="dropdown-item">Income from Other Sources</a>
+                            <a href="service.html" class="dropdown-item">TDS Return Filing</a>
+                            <a href="service.html" class="dropdown-item">Tax Planning & Advisory</a>
+                        </div>
+                    </div>
+
+                    <!-- Book Keeping Dropdown (New - from requirements) -->
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Book Keeping</a>
+                        <div class="dropdown-menu border-0 shadow rounded-3 large-dropdown">
+                            <div class="service-dropdown-columns">
+                                <a href="service.html" class="dropdown-item">GST Monthly Returns</a>
+                                <a href="service.html" class="dropdown-item">GST Input & Output Reconciliation</a>
+                                <a href="service.html" class="dropdown-item">TDS Payments & Returns</a>
+                                <a href="service.html" class="dropdown-item">EPF Monthly Returns</a>
+                                <a href="service.html" class="dropdown-item">ESI Monthly Returns</a>
+                                <a href="service.html" class="dropdown-item">MSME Returns</a>
+                                <a href="service.html" class="dropdown-item">Professional Tax Filings</a>
+                                <a href="service.html" class="dropdown-item">Tally Accounting</a>
+                                <a href="service.html" class="dropdown-item">Bank Statement Reconciliation</a>
+                                <a href="service.html" class="dropdown-item">MIS Reports</a>
+                                <a href="service.html" class="dropdown-item">Virtual Bookkeeping Services</a>
+                                <a href="service.html" class="dropdown-item">Statutory Compliance Reporting</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- GST Notice Advisory (Updated from requirements) -->
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Notice Advisory</a>
+                        <div class="dropdown-menu border-0 shadow rounded-3 large-dropdown">
+                            <div class="service-dropdown-columns">
+                                <a href="service.html" class="dropdown-item">GST Notice Assistance</a>
+                                <a href="service.html" class="dropdown-item">GST Non-Filing Notice Support</a>
+                                <a href="service.html" class="dropdown-item">GST Notice Appeal Filings</a>
+                                <a href="service.html" class="dropdown-item">GST Bank Recovery Notice Support</a>
+                                <a href="service.html" class="dropdown-item">GST Audit Notice Support</a>
+                                <a href="service.html" class="dropdown-item">GST Assessment Notice Support</a>
+                                <a href="service.html" class="dropdown-item">GST Enforcement Notice Support</a>
+                                <a href="service.html" class="dropdown-item">GST Revocation & Surrender Support</a>
+                                <a href="service.html" class="dropdown-item">GST Scrutiny Notice Advisory</a>
+                                <a href="service.html" class="dropdown-item">GST Summons Advisory</a>
+                                <a href="service.html" class="dropdown-item">All Income Tax Notice Support</a>
+                                <a href="service.html" class="dropdown-item">Departmental Representation</a>
+                                <a href="service.html" class="dropdown-item">GST Refund Rejection Support</a>
+                                <a href="service.html" class="dropdown-item">Tax & GST Notice Management</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- License & Certifications (New - from requirements) -->
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Licenses</a>
+                        <div class="dropdown-menu border-0 shadow rounded-3">
+                            <a href="service.html" class="dropdown-item">Net Worth Certificate Support</a>
+                            <a href="service.html" class="dropdown-item">Turnover Certificate Support</a>
+                            <a href="service.html" class="dropdown-item">Net Working Capital Certificate</a>
+                            <a href="service.html" class="dropdown-item">Net Worth Certificate for Visa</a>
+                            <a href="service.html" class="dropdown-item">Net Worth Certificate for Loan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="tel:+919626485868" class="btn btn-primary px-3 mx-2 rounded-pill d-none d-lg-block btn">Ask Expert</a>
+        </nav>
+        <!-- Navbar End -->
+
+    <!-- Hero Section with Services Showcase -->
+        <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+            <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Slide 1 - Startups & Business Registrations -->
+                    <div class="carousel-item active carousel-item-bg-1">
+                        <div class="carousel-caption d-flex align-items-center">
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <!-- Left Side: Main Heading & Text -->
+                                    <div class="col-lg-7 text-start mb-4 mb-lg-0">
+                                        <span class="badge bg-primary px-4 py-2 rounded-pill mb-3">Startup Registrations</span>
+                                        <h1 class="display-3 fw-bold text-white mb-4">Launch Your Business<br>With <span class="text-primary">Expert Compliance</span></h1>
+                                        <p class="fs-5 text-white-50 mb-4">Proprietorship | Partnership | OPC | LLP | Private Limited Company - Complete registration support with legal documentation and GST compliance.</p>
+                                        <div class="d-flex gap-3 flex-wrap">
+                                            <a href="tel:+919626485868" class="btn btn-primary rounded-pill py-3 px-5"><i class="fas fa-phone-alt me-2"></i>Call Expert Now</a>
+                                            <a href="https://wa.me/919626485868" class="btn btn-outline-light rounded-pill py-3 px-5"><i class="fab fa-whatsapp me-2"></i>WhatsApp Query</a>
+                                        </div>
+                                    </div>
+                                    <!-- Right Side: Service Cards -->
+                                    <div class="col-lg-5">
+                                        <div class="row g-3">
+                                            <div class="col-12 wow fadeInUp" data-wow-delay="0.2s">
+                                                <div class="home-service-card bg-white rounded-3 shadow-sm p-3 d-flex align-items-center">
+                                                    <div class="service-icon-box-sm bg-primary text-white me-3"><i class="bi bi-building"></i></div>
+                                                    <div><h6 class="fw-bold mb-0">Proprietorship Firm</h6><small class="text-muted">Complete registration in 5-7 days</small></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 wow fadeInUp" data-wow-delay="0.3s">
+                                                <div class="home-service-card bg-white rounded-3 shadow-sm p-3 d-flex align-items-center">
+                                                    <div class="service-icon-box-sm bg-success text-white me-3"><i class="bi bi-people"></i></div>
+                                                    <div><h6 class="fw-bold mb-0">Partnership Firm</h6><small class="text-muted">Partnership deed & registration</small></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 wow fadeInUp" data-wow-delay="0.4s">
+                                                <div class="home-service-card bg-white rounded-3 shadow-sm p-3 d-flex align-items-center">
+                                                    <div class="service-icon-box-sm bg-warning text-white me-3"><i class="bi bi-person-badge"></i></div>
+                                                    <div><h6 class="fw-bold mb-0">One Person Company (OPC)</h6><small class="text-muted">Best for solo entrepreneurs</small></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 wow fadeInUp" data-wow-delay="0.5s">
+                                                <div class="home-service-card bg-white rounded-3 shadow-sm p-3 d-flex align-items-center">
+                                                    <div class="service-icon-box-sm bg-info text-white me-3"><i class="bi bi-briefcase"></i></div>
+                                                    <div><h6 class="fw-bold mb-0">LLP & Private Limited</h6><small class="text-muted">Limited liability protection</small></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 - GST & Tax Services -->
+                    <div class="carousel-item carousel-item-bg-2">
+                        <div class="carousel-caption d-flex align-items-center">
+                            <div class="container">
+                                <div class="row align-items-center flex-row-reverse">
+                                    <!-- Left Side: Service Cards -->
+                                    <div class="col-lg-5 mb-4 mb-lg-0">
+                                        <div class="row g-3">
+                                            <div class="col-12 wow fadeInUp" data-wow-delay="0.2s">
+                                                <div class="home-service-card bg-white rounded-3 shadow-sm p-3 d-flex align-items-center">
+                                                    <div class="service-icon-box-sm bg-success text-white me-3"><i class="bi bi-receipt"></i></div>
+                                                    <div><h6 class="fw-bold mb-0">GST Registration</h6><small class="text-muted">New registration & amendment</small></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 wow fadeInUp" data-wow-delay="0.3s">
+                                                <div class="home-service-card bg-white rounded-3 shadow-sm p-3 d-flex align-items-center">
+                                                    <div class="service-icon-box-sm bg-primary text-white me-3"><i class="bi bi-file-text"></i></div>
+                                                    <div><h6 class="fw-bold mb-0">Monthly/Annual Filings</h6><small class="text-muted">GSTR-1, 3B, 9, 9C filing</small></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 wow fadeInUp" data-wow-delay="0.4s">
+                                                <div class="home-service-card bg-white rounded-3 shadow-sm p-3 d-flex align-items-center">
+                                                    <div class="service-icon-box-sm bg-danger text-white me-3"><i class="bi bi-search"></i></div>
+                                                    <div><h6 class="fw-bold mb-0">GST Audit & Refunds</h6><small class="text-muted">Audit support & refund claims</small></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 wow fadeInUp" data-wow-delay="0.5s">
+                                                <div class="home-service-card bg-white rounded-3 shadow-sm p-3 d-flex align-items-center">
+                                                    <div class="service-icon-box-sm bg-warning text-white me-3"><i class="bi bi-graph-up"></i></div>
+                                                    <div><h6 class="fw-bold mb-0">LUT Filing</h6><small class="text-muted">For zero-rated exports</small></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Right Side: Main Heading -->
+                                    <div class="col-lg-7 text-start">
+                                        <span class="badge bg-success px-4 py-2 rounded-pill mb-3">GST & Tax Services</span>
+                                        <h1 class="display-3 fw-bold text-white mb-4">Simplify Your<br><span class="text-success">GST Compliance</span></h1>
+                                        <p class="fs-5 text-white-50 mb-4">Registration | Monthly Filing | Annual Returns | GST Audit | Refunds | LUT Filing | Assessment Support - End-to-end GST solutions for your business.</p>
+                                        <div class="d-flex gap-3 flex-wrap">
+                                            <a href="tel:+919626485868" class="btn btn-success rounded-pill py-3 px-5"><i class="fas fa-phone-alt me-2"></i>Get Free Consultation</a>
+                                            <a href="#service" class="btn btn-outline-light rounded-pill py-3 px-5">View Pricing Plans</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 - Book Keeping & Accounting -->
+                    <div class="carousel-item carousel-item-bg-1">
+                        <div class="carousel-caption d-flex align-items-center">
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-7 text-start mb-4 mb-lg-0">
+                                        <span class="badge bg-warning px-4 py-2 rounded-pill mb-3">Book Keeping & Accounting</span>
+                                        <h1 class="display-3 fw-bold text-white mb-4">Real-Time<br><span class="text-warning">Financial Clarity</span></h1>
+                                        <p class="fs-5 text-white-50 mb-4">Tally Accounting | Bank Reconciliation | MIS Reports | EPF/ESI Returns | Virtual Bookkeeping | Statutory Compliance Reporting</p>
+                                        <div class="d-flex gap-3 flex-wrap">
+                                            <a href="https://wa.me/919626485868" class="btn btn-warning rounded-pill py-3 px-5 text-dark"><i class="fab fa-whatsapp me-2"></i>Chat with Expert</a>
+                                            <a href="#contact" class="btn btn-outline-light rounded-pill py-3 px-5">Request Demo</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="row g-3">
+                                            <div class="col-12 wow fadeInUp" data-wow-delay="0.2s">
+                                                <div class="home-service-card bg-white rounded-3 shadow-sm p-3 d-flex align-items-center">
+                                                    <div class="service-icon-box-sm bg-warning text-white me-3"><i class="bi bi-calculator-fill"></i></div>
+                                                    <div><h6 class="fw-bold mb-0">Tally Accounting</h6><small class="text-muted">Professional bookkeeping services</small></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 wow fadeInUp" data-wow-delay="0.3s">
+                                                <div class="home-service-card bg-white rounded-3 shadow-sm p-3 d-flex align-items-center">
+                                                    <div class="service-icon-box-sm bg-info text-white me-3"><i class="bi bi-pie-chart"></i></div>
+                                                    <div><h6 class="fw-bold mb-0">MIS Reports</h6><small class="text-muted">Custom financial reporting</small></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 wow fadeInUp" data-wow-delay="0.4s">
+                                                <div class="home-service-card bg-white rounded-3 shadow-sm p-3 d-flex align-items-center">
+                                                    <div class="service-icon-box-sm bg-secondary text-white me-3"><i class="bi bi-cloud-upload"></i></div>
+                                                    <div><h6 class="fw-bold mb-0">Virtual Bookkeeping</h6><small class="text-muted">Remote accounting solutions</small></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 - Income Tax Services -->
+                    <div class="carousel-item carousel-item-bg-2">
+                        <div class="carousel-caption d-flex align-items-center">
+                            <div class="container">
+                                <div class="row align-items-center flex-row-reverse">
+                                    <div class="col-lg-5 mb-4 mb-lg-0">
+                                        <div class="row g-3">
+                                            <div class="col-12 wow fadeInUp" data-wow-delay="0.2s">
+                                                <div class="home-service-card bg-white rounded-3 shadow-sm p-3 d-flex align-items-center">
+                                                    <div class="service-icon-box-sm bg-info text-white me-3"><i class="bi bi-cash-stack"></i></div>
+                                                    <div><h6 class="fw-bold mb-0">Income Tax Return</h6><small class="text-muted">ITR-1, 2, 3, 4, 5 filing</small></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 wow fadeInUp" data-wow-delay="0.3s">
+                                                <div class="home-service-card bg-white rounded-3 shadow-sm p-3 d-flex align-items-center">
+                                                    <div class="service-icon-box-sm bg-danger text-white me-3"><i class="bi bi-file-earmark-spreadsheet"></i></div>
+                                                    <div><h6 class="fw-bold mb-0">TDS Returns</h6><small class="text-muted">Form 24Q, 26Q, 27EQ filing</small></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 wow fadeInUp" data-wow-delay="0.4s">
+                                                <div class="home-service-card bg-white rounded-3 shadow-sm p-3 d-flex align-items-center">
+                                                    <div class="service-icon-box-sm bg-primary text-white me-3"><i class="bi bi-graph-up"></i></div>
+                                                    <div><h6 class="fw-bold mb-0">Tax Planning</h6><small class="text-muted">Maximize your tax savings</small></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7 text-start">
+                                        <span class="badge bg-info px-4 py-2 rounded-pill mb-3">Income Tax Services</span>
+                                        <h1 class="display-3 fw-bold text-white mb-4">Maximize Savings<br><span class="text-info">Stay Compliant</span></h1>
+                                        <p class="fs-5 text-white-50 mb-4">ITR Filing for Salary | House Property | Business | Capital Gains | Other Sources - Professional tax filing with maximum refund guarantee.</p>
+                                        <div class="d-flex gap-3 flex-wrap">
+                                            <a href="tel:+919626485868" class="btn btn-info rounded-pill py-3 px-5 text-white"><i class="fas fa-phone-alt me-2"></i>Book Appointment</a>
+                                            <a href="#service" class="btn btn-outline-light rounded-pill py-3 px-5">Check Eligibility</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 5 - Notice Advisory & Legal Support -->
+                    <div class="carousel-item carousel-item-bg-1">
+                        <div class="carousel-caption d-flex align-items-center">
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-7 text-start mb-4 mb-lg-0">
+                                        <span class="badge bg-danger px-4 py-2 rounded-pill mb-3">Notice Advisory & Legal Support</span>
+                                        <h1 class="display-3 fw-bold text-white mb-4">Expert Defense For<br><span class="text-danger">Tax Notices</span></h1>
+                                        <p class="fs-5 text-white-50 mb-4">GST Notices | Income Tax Notices | Assessment Support | Appeals | Departmental Representation | Recovery Support | Revocation Services</p>
+                                        <div class="d-flex gap-3 flex-wrap">
+                                            <a href="tel:+919626485868" class="btn btn-danger rounded-pill py-3 px-5"><i class="fas fa-shield-alt me-2"></i>Emergency Support</a>
+                                            <a href="https://wa.me/919626485868" class="btn btn-outline-light rounded-pill py-3 px-5">Send Notice Details</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="row g-3">
+                                            <div class="col-12 wow fadeInUp" data-wow-delay="0.2s">
+                                                <div class="home-service-card bg-white rounded-3 shadow-sm p-3 d-flex align-items-center">
+                                                    <div class="service-icon-box-sm bg-danger text-white me-3"><i class="bi bi-exclamation-triangle-fill"></i></div>
+                                                    <div><h6 class="fw-bold mb-0">GST Notice Support</h6><small class="text-muted">Scrutiny, Audit, Summons</small></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 wow fadeInUp" data-wow-delay="0.3s">
+                                                <div class="home-service-card bg-white rounded-3 shadow-sm p-3 d-flex align-items-center">
+                                                    <div class="service-icon-box-sm bg-warning text-white me-3"><i class="bi bi-hammer"></i></div>
+                                                    <div><h6 class="fw-bold mb-0">Appeal Filings</h6><small class="text-muted">GST & Income Tax Appeals</small></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 wow fadeInUp" data-wow-delay="0.4s">
+                                                <div class="home-service-card bg-white rounded-3 shadow-sm p-3 d-flex align-items-center">
+                                                    <div class="service-icon-box-sm bg-success text-white me-3"><i class="bi bi-arrow-repeat"></i></div>
+                                                    <div><h6 class="fw-bold mb-0">Revocation Support</h6><small class="text-muted">Cancellation & Surrender</small></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Services Section
+        <section class="position-relative overflow-hidden d-lg-none d-block">
+            <div class="container mobile_banner py-5">
+                <div class="text-center"><span class="badge bg-primary px-4 py-2 rounded-pill mb-3">Trusted Business Solutions</span><h1 class="display-5 fw-bold mb-3 text-dark">Professional Tax & Compliance Services</h1><p class="text-muted mx-auto">GST, Income Tax, Bookkeeping, Registrations, Notices & Licenses</p></div>
+            </div>
+            <div class="container pb-5"><div class="row g-4"><div class="col-12"><div class="home-service-card bg-white rounded shadow-sm p-4"><div class="service-icon-box bg-primary text-white mb-4"><i class="bi bi-rocket-takeoff-fill"></i></div><h4 class="fw-bold">Startup Registrations</h4><p>Proprietorship, Partnership, OPC, LLP, Private Limited</p><a href="#" class="btn btn-primary rounded-pill px-4">Explore</a></div></div><div class="col-12"><div class="home-service-card bg-white rounded shadow-sm p-4"><div class="service-icon-box bg-success text-white mb-4"><i class="bi bi-receipt"></i></div><h4 class="fw-bold">GST Services</h4><p>Registration, Monthly/Annual Filing, Audits, Refunds, Assessment</p><a href="#" class="btn btn-success rounded-pill px-4">Explore</a></div></div><div class="col-12"><div class="home-service-card bg-white rounded shadow-sm p-4"><div class="service-icon-box bg-warning text-white mb-4"><i class="bi bi-journal-bookmark-fill"></i></div><h4 class="fw-bold">Book Keeping</h4><p>Tally, Reconciliation, MIS, EPF/ESI Returns, Virtual Bookkeeping</p><a href="#" class="btn btn-warning rounded-pill px-4 text-white">Explore</a></div></div><div class="col-12"><div class="home-service-card bg-white rounded shadow-sm p-4"><div class="service-icon-box bg-info text-white mb-4"><i class="bi bi-cash-stack"></i></div><h4 class="fw-bold">Income Tax</h4><p>Salary, House Property, Business, Capital Gains, TDS Returns</p><a href="#" class="btn btn-info rounded-pill px-4 text-white">Explore</a></div></div><div class="col-12"><div class="home-service-card bg-white rounded shadow-sm p-4"><div class="service-icon-box bg-danger text-white mb-4"><i class="bi bi-shield-check"></i></div><h4 class="fw-bold">Notice Advisory</h4><p>GST Notices, Appeals, Departmental Representation, Recovery Support</p><a href="#" class="btn btn-danger rounded-pill px-4">Explore</a></div></div><div class="col-12"><div class="home-service-card bg-white rounded shadow-sm p-4"><div class="service-icon-box bg-secondary text-white mb-4"><i class="bi bi-patch-check-fill"></i></div><h4 class="fw-bold">Licenses & Certifications</h4><p>Net Worth, Turnover, Working Capital Certificates for Loan/Visa</p><a href="#" class="btn btn-secondary rounded-pill px-4">Explore</a></div></div></div></div>
+        </section> -->
+
+        <!-- About Section -->
+        <div class="container-fluid py-5"><div class="container"><div class="row g-5"><div class="col-lg-6 wow fadeInUp"><div class="position-relative overflow-hidden rounded ps-5 pt-5 h-100" style="min-height:400px"><img class="position-absolute w-100 h-100" src="img/about1.jpg" style="object-fit:cover"><div class="position-absolute top-0 start-0 bg-white rounded pe-3 pb-3" style="width:200px;height:200px"><div class="d-flex flex-column justify-content-center text-center bg-primary rounded h-100 p-3"><h1 class="text-white mb-0">10+</h1><h2 class="text-white">Years</h2><h5 class="text-white mb-0">Experience</h5></div></div></div></div><div class="col-lg-6 wow fadeInUp"><div class="h-100"><h1 class="display-6 mb-5">Expert Tax & Compliance Solutions</h1><p class="fs-5 text-primary mb-4">From startup registrations to complex notice advisory, we handle all your compliance needs.</p><div class="row g-4 mb-4"><div class="col-sm-6"><div class="d-flex align-items-center"><img class="flex-shrink-0 me-3" src="img/icon/icon-04-primary.png" alt=""><h5 class="mb-0">Complete Compliance</h5></div></div><div class="col-sm-6"><div class="d-flex align-items-center"><img class="flex-shrink-0 me-3" src="img/icon/icon-03-primary.png" alt=""><h5 class="mb-0">Expert Advisory</h5></div></div></div><p class="mb-4">We provide GST, Income Tax, Bookkeeping, Registrations, Notice Advisory, and License certifications under one roof. Trusted by 500+ businesses.</p><div class="border-top mt-4 pt-4"><div class="d-flex align-items-center"><i class="bi bi-person-circle fs-1 me-3"></i><h5 class="mb-0">Call Us: +91 96264 85868</h5></div></div></div></div></div></div></div>
+
+        <!-- Pricing Section (Retained from original but can be customized) -->
+        <!-- <div class="container-fluid py-5" id="service"><div class="container"><div class="text-center mx-auto" style="max-width:700px"><h1 class="display-6 mb-5">Affordable Pricing Plans</h1></div><div class="row g-4 justify-content-center"><div class="col-lg-4 col-md-6 wow fadeInUp"><div class="pricing-card bg-white rounded-4 shadow-sm p-5 h-100 text-center border"><div class="pricing-icon bg-primary text-white mx-auto mb-4"><i class="fa fa-rocket"></i></div><h3 class="fw-bold text-primary">Foundation</h3><h1 class="display-4 fw-bold my-3">₹4,000</h1><p class="text-muted">+ GST</p><div class="mb-4"><span class="badge bg-primary px-4 py-2 rounded-pill">Up to ₹2Cr Turnover</span></div><ul class="list-unstyled text-start mt-4"><li class="mb-3">✔ GST Return Filing</li><li class="mb-3">✔ Income Tax Filing</li><li class="mb-3">✔ TDS Return Filing</li><li class="mb-3">✔ Basic Bookkeeping</li><li class="mb-3">✔ Compliance Support</li></ul><a href="https://wa.me/919626485868" class="btn btn-primary rounded-pill py-3 w-100 mt-4">Chat on WhatsApp</a></div></div><div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s"><div class="pricing-card bg-dark text-white rounded-4 shadow-lg p-5 h-100 text-center border border-warning"><div class="position-absolute top-0 start-50 translate-middle"><span class="badge bg-warning text-dark px-4 py-2 rounded-pill">MOST POPULAR</span></div><div class="pricing-icon bg-warning text-dark mx-auto mb-4"><i class="fa fa-chart-line"></i></div><h3 class="fw-bold text-warning">Growth</h3><h1 class="display-4 fw-bold mt-3 text-warning">₹7,000</h1><p class="text-light">+ GST</p><div class="mb-4"><span class="badge bg-warning text-dark px-4 py-2 rounded-pill">Up to ₹5Cr Turnover</span></div><ul class="list-unstyled text-start mt-4"><li class="mb-3">✔ GST Returns + Reconciliation</li><li class="mb-3">✔ Income Tax & TDS Filing</li><li class="mb-3">✔ EPF/ESI Monthly Returns</li><li class="mb-3">✔ Virtual Bookkeeping</li><li class="mb-3">✔ Notice Support</li></ul><a href="tel:+919626485868" class="btn btn-warning rounded-pill py-3 w-100 mt-4">Call Expert</a></div></div><div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s"><div class="pricing-card bg-white rounded-4 shadow-sm p-5 h-100 text-center border border-danger"><div class="pricing-icon bg-danger text-white mx-auto mb-4"><i class="fa fa-crown"></i></div><h3 class="fw-bold text-danger">Enterprise</h3><h1 class="display-4 fw-bold my-3">₹10,000</h1><p class="text-muted">+ GST</p><div class="mb-4"><span class="badge bg-danger px-4 py-2 rounded-pill">Up to ₹10Cr Turnover</span></div><ul class="list-unstyled text-start mt-4"><li class="mb-3">✔ All Compliance Filings</li><li class="mb-3">✔ GST Audit & Assessment Support</li><li class="mb-3">✔ Advanced MIS Reporting</li><li class="mb-3">✔ License Certifications</li><li class="mb-3">✔ Priority Notice Advisory</li></ul><a href="https://wa.me/919626485868" class="btn btn-danger rounded-pill py-3 w-100 mt-4">Get Consultation</a></div></div></div></div></div> -->
+
+
+        <div class="container-fluid py-5" id="service">
+            <div class="container">
+                <div class="text-center mx-auto" style="max-width: 700px;">
+                    <span class="badge bg-primary px-4 py-2 rounded-pill mb-3">What We Offer</span>
+                    <h1 class="display-6 mb-5">Comprehensive Tax & Business Services</h1>
+                    <p class="text-muted mb-5">End-to-end solutions for GST, Income Tax, Registrations, Bookkeeping, Notice Advisory & Licenses</p>
+                </div>
+                
+                <div class="row g-4 justify-content-center">
+                    <!-- Service Card 1 - Startup Registrations -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp">
+                        <div class="service-card bg-white rounded-4 shadow-sm p-5 h-100 text-center border">
+                            <div class="service-icon-box bg-primary text-white mx-auto mb-4">
+                                <i class="bi bi-building"></i>
+                            </div>
+                            <h3 class="fw-bold mb-3">Startup Registrations</h3>
+                            <p class="text-muted mb-4">Complete business registration solutions for new entrepreneurs and established businesses.</p>
+                            <ul class="list-unstyled text-start mt-3">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Proprietorship Firm</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Partnership Firm</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> One Person Company (OPC)</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Limited Liability Partnership (LLP)</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Private Limited Company</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary rounded-pill px-4 mt-3">Learn More →</a>
+                        </div>
+                    </div>
+        
+                    <!-- Service Card 2 - GST Services -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-card bg-white rounded-4 shadow-sm p-5 h-100 text-center border">
+                            <div class="service-icon-box bg-success text-white mx-auto mb-4">
+                                <i class="bi bi-receipt"></i>
+                            </div>
+                            <h3 class="fw-bold mb-3">GST Services</h3>
+                            <p class="text-muted mb-4">Complete GST compliance solutions from registration to annual filings and audits.</p>
+                            <ul class="list-unstyled text-start mt-3">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> GST Registration</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Monthly & Annual Filings</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> GST Audit & Refunds</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> LUT Filing</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i> GST Amendment & Cancellation</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-success rounded-pill px-4 mt-3">Learn More →</a>
+                        </div>
+                    </div>
+        
+                    <!-- Service Card 3 - Income Tax -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-card bg-white rounded-4 shadow-sm p-5 h-100 text-center border">
+                            <div class="service-icon-box bg-info text-white mx-auto mb-4">
+                                <i class="bi bi-cash-stack"></i>
+                            </div>
+                            <h3 class="fw-bold mb-3">Income Tax</h3>
+                            <p class="text-muted mb-4">Professional income tax filing and planning services for individuals and businesses.</p>
+                            <ul class="list-unstyled text-start mt-3">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-info me-2"></i> ITR Filing (All Sections)</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-info me-2"></i> TDS Return Filing</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-info me-2"></i> Tax Planning & Advisory</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-info me-2"></i> Salary, Business, Capital Gains</li>
+                                <li><i class="bi bi-check-circle-fill text-info me-2"></i> House Property & Other Sources</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-info rounded-pill px-4 mt-3">Learn More →</a>
+                        </div>
+                    </div>
+        
+                    <!-- Service Card 4 - Book Keeping -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-card bg-white rounded-4 shadow-sm p-5 h-100 text-center border">
+                            <div class="service-icon-box bg-warning text-white mx-auto mb-4">
+                                <i class="bi bi-journal-bookmark-fill"></i>
+                            </div>
+                            <h3 class="fw-bold mb-3">Book Keeping</h3>
+                            <p class="text-muted mb-4">Comprehensive accounting and bookkeeping services for accurate financial management.</p>
+                            <ul class="list-unstyled text-start mt-3">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-warning me-2"></i> Tally Accounting</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-warning me-2"></i> Bank Reconciliation</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-warning me-2"></i> MIS Reports</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-warning me-2"></i> Virtual Bookkeeping</li>
+                                <li><i class="bi bi-check-circle-fill text-warning me-2"></i> EPF, ESI & Professional Tax Filings</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-warning rounded-pill px-4 mt-3">Learn More →</a>
+                        </div>
+                    </div>
+        
+                    <!-- Service Card 5 - Notice Advisory -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-card bg-white rounded-4 shadow-sm p-5 h-100 text-center border">
+                            <div class="service-icon-box bg-danger text-white mx-auto mb-4">
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+                            <h3 class="fw-bold mb-3">Notice Advisory</h3>
+                            <p class="text-muted mb-4">Expert assistance for GST, Income Tax notices and legal representation.</p>
+                            <ul class="list-unstyled text-start mt-3">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i> GST Notice Support</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i> Income Tax Notice Support</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i> Appeal Filings</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i> Departmental Representation</li>
+                                <li><i class="bi bi-check-circle-fill text-danger me-2"></i> Recovery & Revocation Support</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-danger rounded-pill px-4 mt-3">Learn More →</a>
+                        </div>
+                    </div>
+        
+                    <!-- Service Card 6 - Licenses & Certifications -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-card bg-white rounded-4 shadow-sm p-5 h-100 text-center border">
+                            <div class="service-icon-box bg-secondary text-white mx-auto mb-4">
+                                <i class="bi bi-patch-check-fill"></i>
+                            </div>
+                            <h3 class="fw-bold mb-3">Licenses & Certifications</h3>
+                            <p class="text-muted mb-4">Professional certification services for business and visa requirements.</p>
+                            <ul class="list-unstyled text-start mt-3">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-secondary me-2"></i> Net Worth Certificate</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-secondary me-2"></i> Turnover Certificate</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-secondary me-2"></i> Working Capital Certificate</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-secondary me-2"></i> Visa Support Certificates</li>
+                                <li><i class="bi bi-check-circle-fill text-secondary me-2"></i> Loan Support Certificates</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-secondary rounded-pill px-4 mt-3">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact Section with Google Form Integration -->
+        <div class="container-fluid py-5" id="contact"><div class="container"><div class="row g-5"><div class="col-lg-6 wow fadeIn"><h1 class="display-6 mb-5">Have Any Query? Contact Us</h1><h5 class="lh-base mb-4">Our expert team will get back to you shortly</h5><form action="https://docs.google.com/forms/d/e/1FAIpQLSeelfEv3UxWtp5AHJqcnzs26uKYRcBkP7bHi75gC_moomzh5Q/formResponse" method="POST" target="hidden_iframe" id="contactForm"><div class="row g-3"><div class="col-md-6"><div class="form-floating"><input type="text" class="form-control" name="entry.194837590" placeholder="Your Name" required><label>Your Name</label></div></div><div class="col-md-6"><div class="form-floating"><input type="email" class="form-control" name="entry.762941415" placeholder="Your Email" required><label>Your Email</label></div></div><div class="col-md-6"><div class="form-floating"><input type="tel" class="form-control" name="entry.1374345047" placeholder="Phone Number"><label>Phone Number</label></div></div><div class="col-md-6"><div class="form-floating"><select class="form-select" name="entry.394071758" required><option value="" disabled selected>Select Service</option><option value="Startup Registration">Startup Registration</option><option value="GST Services">GST Services</option><option value="Income Tax">Income Tax</option><option value="Book Keeping">Book Keeping</option><option value="Notice Advisory">Notice Advisory</option><option value="Licenses & Certifications">Licenses & Certifications</option></select><label>Select Service</label></div></div><div class="col-12"><div class="form-floating"><input type="text" class="form-control" name="entry.1509995013" placeholder="Subject"><label>Subject</label></div></div><div class="col-12"><div class="form-floating"><textarea class="form-control" name="entry.1722405359" placeholder="Message" style="height:120px" required></textarea><label>Message</label></div></div><div class="col-12 text-center"><input class="btn btn-primary px-5 py-3" type="submit" value="Send Message"></div></div></form><iframe name="hidden_iframe" style="display:none;"></iframe></div><div class="col-lg-6 wow fadeIn" style="min-height:450px"><div class="position-relative rounded overflow-hidden h-100"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1944.033749414828!2d80.24523423818542!3d12.96753261064555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d6cd3a09a63%3A0x74988f282ed7c772!2s4%2C%20Karpaga%20Vinayagar%20St%2C%20Kandhanchavadi%2C%20Perungudi%2C%20Chennai%2C%20Tamil%20Nadu%20600096!5e0!3m2!1sen!2sin!4v1682848665622!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div></div></div></div></div>
+
+        <!-- Thank You Modal -->
+        <div class="modal fade" id="thankyouModal" tabindex="-1"><div class="modal-dialog modal-dialog-centered"><div class="modal-content text-center p-4 rounded-3"><div class="modal-body"><div class="mb-3"><i class="bi bi-check-circle-fill text-success" style="font-size:60px"></i></div><h3 class="text-success mb-2">Thank You!</h3><p class="mb-4">Your submission has been received successfully.<br>Our team will contact you shortly.</p><button class="btn btn-primary px-4" data-bs-dismiss="modal">Close</button></div></div></div></div>
+
+        <!-- Footer -->
+        <div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s"><div class="container py-5"><div class="row g-5"><div class="col-lg-3 col-md-6"><h1 class="text-white mb-4">TaxCode</h1><p>Expert tax consulting, registrations, bookkeeping, notice advisory & license certifications. Trusted by businesses across India.</p></div><div class="col-lg-3 col-md-6"><h5 class="text-light mb-4">Address</h5><p><i class="fa fa-map-marker-alt me-3"></i>4, Karpaga Vinayagar St, Kandhanchavadi, Perungudi, Chennai - 600096</p><p><i class="fa fa-phone-alt me-3"></i>+91 96264 85868</p><p><i class="fa fa-envelope me-3"></i>tameenansaris@gmail.com</p></div><div class="col-lg-3 col-md-6"><h5 class="text-light mb-4">Quick Links</h5><a class="btn btn-link" href="#">Startup Registrations</a><a class="btn btn-link" href="#">GST Services</a><a class="btn btn-link" href="#">Income Tax</a><a class="btn btn-link" href="#">Book Keeping</a><a class="btn btn-link" href="#">Notice Advisory</a><a class="btn btn-link" href="#">Licenses & Certifications</a></div><div class="col-lg-3 col-md-6"><h5 class="text-light mb-4">Chat With Us</h5><p>Have questions? Chat with our experts instantly on WhatsApp.</p><div class="position-relative mx-auto"><a href="https://wa.me/919626485868" target="_blank" class="btn btn-success w-100 py-3"><i class="fab fa-whatsapp me-2"></i> Chat Now on WhatsApp</a></div></div></div></div><div class="container-fluid copyright"><div class="container"><div class="row"><div class="col-md-6 text-center text-md-start mb-3 mb-md-0">&copy; <a href="#">TaxCode 2026</a>, All Right Reserved.</div></div></div></div></div>
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+        <!-- Floating Buttons -->
+        <a href="https://wa.me/919626485868" target="_blank" class="btn btn-success rounded-circle shadow" style="position:fixed; bottom:90px; left:20px; width:60px; height:60px; z-index:999; display:flex; align-items:center; justify-content:center"><i class="fab fa-whatsapp fa-2x"></i></a>
+        <a href="tel:+919626485868" class="btn btn-primary rounded-circle shadow" style="position:fixed; bottom:20px; left:20px; width:60px; height:60px; z-index:999; display:flex; align-items:center; justify-content:center"><i class="fa fa-phone-alt"></i></a>
+
+        <script>
+            let isSubmitted = false;
+            document.getElementById("contactForm").addEventListener("submit", function() { isSubmitted = true; });
+            document.querySelector("iframe[name='hidden_iframe']").addEventListener("load", function() {
+                if (isSubmitted) {
+                    const modal = new bootstrap.Modal(document.getElementById('thankyouModal'));
+                    modal.show();
+                    document.getElementById("contactForm").reset();
+                    isSubmitted = false;
+                }
+            });
+        </script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
